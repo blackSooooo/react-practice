@@ -6,7 +6,6 @@ module.exports = {
   extends: [
     'airbnb',
     'plugin:react/recommended',
-    'plugin:prettier/recommended',
   ],
   parser: '@typescript-eslint/parser',
   parserOptions: {
@@ -19,7 +18,6 @@ module.exports = {
   plugins: [
     'react',
     '@typescript-eslint',
-    'prettier',
   ],
   rules: {
     'prettier/prettier': 0,
@@ -27,8 +25,10 @@ module.exports = {
     'react/react-in-jsx-scope': 'off',
     'react/jsx-props-no-spreading': 'off',
     'react/jsx-filename-extension': [1, {
-        extensions: ['.tsx'],
+      extensions: ['.tsx'],
     }],
+    'react/function-component-definition': 0,
+    'import/no-unresolved': 'off',
   },
   settings: {
     'import/resolver': {
